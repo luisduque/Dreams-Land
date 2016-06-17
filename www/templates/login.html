@@ -1,0 +1,20 @@
+<ion-view title="Login" id="page1" hide-back-button="true">
+    <ion-content padding="true" style="background: url(img/GeM7FpM4T6uNsJO9BDud_inicio.png) no-repeat center;background-size:cover;" class="has-header">
+    <div class="spacer" style="width: 283px; height: 118px;"></div>
+        <form class="list" ng-submit="login()" ng-controller="loginCtrl">
+            <ion-list>
+                <label class="item item-input">
+                    <input type="text" placeholder="Nombre de usuario" ng-model="username">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Contraseña" ng-model="password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+           <input id="login-button1" class="button button-clear button-block button-positive" type="submit" name="submit" value="Entrar">
+        <a ui-sref="signup" id="login-button2" style="font-weight:600;" class="button button-positive  button-block button-clear">Crear una cuenta</a>
+        </form>
+    </ion-content>
+ 
+
+</ion-view>
